@@ -1,0 +1,13 @@
+doctype html
+head
+  title Welcome Index Page
+  meta(charset='UTF-8')
+  link(rel='stylesheet' href='/index.css')
+#app
+  #hero
+    h1 Welcome Index Page!
+    p
+      a Try My Coding Quiz Game!
+script.
+  const rNum = Math.floor(Math.random() * 1000)
+  document.querySelector("a").setAttribute("href", `/quiz-game/${rNum}`)

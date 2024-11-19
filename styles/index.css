@@ -1,0 +1,18 @@
+body {
+    background: whitesmoke;
+    color: #232323;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 0;
+}
+#app h1 {
+    text-align: center;
+    margin: 0;
+}
+#hero {
+    height: 20vh;
+    width: 100vw;
+    background-color: skyblue;
+    padding: 20px;
+}

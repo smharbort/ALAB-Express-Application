@@ -1,0 +1,23 @@
+doctype html
+head
+  title #{title}
+  meta(charset='UTF-8')
+  link(rel='stylesheet' href='/quiz-game.css')
+#app
+  h1 #{title}
+  form(action="/quiz-game/:q_num/download" method="GET")
+    button(type="submit") download image!
+  form(action="/quiz-game/:q_num" method="POST")
+    input(type="text" name="input" placeholder="type something here")
+    button(type="submit") post data!
+  #quiz-box
+    h2 #{question}
+    .choices
+      div
+        ul
+          li #{answers.one}
+          li #{answers.two}
+      div
+        ul
+          li #{answers.three}
+          li #{answers.four}
